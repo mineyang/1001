@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>cục cưng</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: black;
+      color: white;
+      overflow: hidden;
+    }
+    .background {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: url('background.gif') no-repeat center center fixed;
+      background-size: cover;
+      z-index: -1;
+      filter: brightness(0.6);
+    }
+    .content {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    h1 {
+      font-size: 2em;
+      animation: fadein 2s ease-in-out forwards;
+    }
+    @keyframes fadein {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+  <div class="content">
+    <h1>Anh yêu em</h1>
+    <h1>Anh thích em</h1>
+    <h1>Anh muốn hiểu em nhiều hơn</h1>
+    <h1>Gặp được em là điều hạnh phúc nhất trong cuộc đời anh</h1>
+    <h1>Chính em đã cho anh động lực để tiến về phía trước</h1>
+    <h1>Anh muốn cùng em vẽ nên bản đồ tương lai của chúng ta</h1>
+    <h1>Anh muốn ở bên cạnh em</h1>
+    <audio autoplay loop>
+      <source src="music.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+</body>
+</html>
